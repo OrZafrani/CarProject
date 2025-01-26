@@ -14,7 +14,7 @@ public class Truck extends Vehicle {
 
     @Override
     public void fixed(){
-        System.out.println("Honker sound updated");
+        System.out.println("Truck Honker sound updated");
     }
 
     @Override

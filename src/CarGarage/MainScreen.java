@@ -5,7 +5,7 @@ import java.util.*;
 public class MainScreen {
     public static void start() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("press 1 for MotorCycle, press 2 for Car, press 3 for Truck");
+        System.out.println("press 1 for MotorCycle, press 2 for Car, press 3 for Truck, press -1 to finish");
         int option = scanner.nextInt();
         ArrayList<Vehicle> vehicleList = new ArrayList<Vehicle>();
         String name;
@@ -33,7 +33,7 @@ public class MainScreen {
                     System.out.println("wrong option press again");
                     break;
             }
-            System.out.println("press 1 for MotorCycle, press 2 for Car, press 3 for Truck");
+            System.out.println("press 1 for MotorCycle, press 2 for Car, press 3 for Truck, press -1 to finish");
             option = scanner.nextInt();
         }
         System.out.println("Garage is working :)");
