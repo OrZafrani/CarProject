@@ -1,10 +1,9 @@
 package CarGarage;
 
 public class Truck extends Vehicle {
-    private String name;
 
     public Truck(String name) {
-        this.name = name;
+    super(name);
     }
 
     @Override
@@ -15,6 +14,10 @@ public class Truck extends Vehicle {
     @Override
     public void fixed(){
         System.out.println("Truck Honker sound updated");
+    }
+
+    public static Truck build(String name){
+        return new Truck(name);
     }
 
     @Override

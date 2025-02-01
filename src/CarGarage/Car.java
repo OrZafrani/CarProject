@@ -1,10 +1,9 @@
 package CarGarage;
 
 public class Car extends Vehicle{
-    private String name;
 
     public Car(String name) {
-        this.name = name;
+        super(name);
     }
 
     @Override
@@ -15,6 +14,10 @@ public class Car extends Vehicle{
     @Override
     public void fixed(){
         System.out.println("Car headlight reinstalled");
+    }
+
+    public static Car build(String name){
+        return new Car(name);
     }
 
     @Override

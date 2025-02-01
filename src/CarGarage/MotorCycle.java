@@ -2,10 +2,9 @@ package CarGarage;
 
 public class MotorCycle extends Vehicle{
 
-    private String name;
 
     public MotorCycle(String name) {
-        this.name = name;
+        super(name);
     }
 
     @Override
@@ -16,6 +15,10 @@ public class MotorCycle extends Vehicle{
     @Override
     public void fixed(){
         System.out.println("Both wheels have been repaired ");
+    }
+
+    public static MotorCycle build(String name){
+        return new MotorCycle(name);
     }
 
     @Override
