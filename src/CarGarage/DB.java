@@ -6,7 +6,6 @@ import java.util.Queue;
 
 public class DB {
 
-   // private enum vehicleType{MotorCycle,Car,Truck};
 
     private HashMap<Integer, Queue<Vehicle>> DB;
 

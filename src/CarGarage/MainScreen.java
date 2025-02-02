@@ -38,7 +38,6 @@ public class MainScreen {
             option = scanner.nextInt();
         }
         System.out.println("Garage is working :)");
-        //Queue<Vehicle> vehicleQueue = new ArrayDeque<>(vehicleList);
         Garage garage = new Garage(protocolGarage,vehicleDB.getVehicles());
         garage.tick();
     }
